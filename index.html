@@ -3,21 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; }
-        .card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; max-width: 400px; }
-        h1 { color: #1a73e8; margin-bottom: 10px; }
-        p { color: #5f6368; line-height: 1.6; }
-        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #1a73e8; color: white; text-decoration: none; border-radius: 5px; transition: 0.3s; }
-        .btn:hover { background-color: #1557b0; }
-    </style>
+    <title>Portofolio Pink Saya</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card">
-        <h1>Halo, Selamat Datang!</h1>
-        <p>Website ini dikembangkan menggunakan <strong>GitHub Codespaces</strong> sebagai bagian dari tugas pemrograman web.</p>
-        <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+    <div class="site-container">
+        <header>
+            <div class="brand">
+                <span>My Pink Portfolio</span>
+            </div>
+            <nav aria-label="Navigasi utama">
+                <a class="nav-link" href="#about">Tentang</a>
+                <a class="nav-link" href="#projects">Proyek</a>
+                <a class="nav-link" href="#testimonials">Testimoni</a>
+                <a class="nav-link" href="#contact">Kontak</a>
+            </nav>
+        </header>
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <span class="hero-badge">Nuansa Pink</span>
+                <h1 id="hero-title" class="hero-title">Portofolio Kreatif dengan Sentuhan Pink yang Elegan</h1>
+                <p class="hero-text">Halo! Saya menghadirkan proyek desain web, branding, dan kreativitas digital yang dirancang dengan gaya hangat dan profesional. Lihat karya terbaik saya, pelajari layanan saya, dan hubungi saya untuk berkolaborasi.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Lihat Proyek</a>
+                    <a class="button button-secondary" href="#contact">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-card">
+                    <span>Love in Pink</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="section-heading">
+                <h2 id="about-heading">Tentang Saya</h2>
+            </div>
+            <p class="section-description">Saya adalah pembuat konten kreatif dan pengembang web dengan fokus pada desain visual yang lembut, fungsional, dan mudah digunakan. Saya membuat pengalaman digital yang nyaman, menarik, dan memiliki identitas yang kuat.</p>
+            <div class="grid-3" role="list">
+                <article class="card" role="listitem">
+                    <h3>Desain Web</h3>
+                    <p>Membangun situs yang responsif dan menarik dengan fokus pada tata letak, tipografi, dan aksesibilitas.</p>
+                </article>
+                <article class="card" role="listitem">
+                    <h3>Branding</h3>
+                    <p>Membantu merek berkomunikasi dengan visual yang konsisten, elegan, serta personal.</p>
+                </article>
+                <article class="card" role="listitem">
+                    <h3>Konten Kreatif</h3>
+                    <p>Menyajikan cerita dan posisi merek dalam bentuk konten yang mudah dicerna dan memikat.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section" aria-labelledby="projects-heading">
+            <div class="section-heading">
+                <h2 id="projects-heading">Proyek Terbaru</h2>
+            </div>
+            <p class="section-description">Beberapa contoh proyek yang menunjukkan kemampuan desain, pengembangan, dan pemahaman estetika bernuansa pink.</p>
+            <div class="grid-3">
+                <article class="card project-card">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" alt="Tampilan proyek web dengan gaya pink" />
+                    <div>
+                        <h3>Website Branding</h3>
+                        <p>Desain halaman web untuk brand fashion dengan palet warna pink lembut dan pengalaman pengguna yang hangat.</p>
+                        <a href="#contact">Pelajari lebih lanjut</a>
+                    </div>
+                </article>
+                <article class="card project-card">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Mockup kartu nama berwarna pink" />
+                    <div>
+                        <h3>Brand Identity</h3>
+                        <p>Menciptakan identitas visual yang elegan untuk usaha kecil dengan tampilan yang konsisten dan memorable.</p>
+                        <a href="#contact">Pelajari lebih lanjut</a>
+                    </div>
+                </article>
+                <article class="card project-card">
+                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1b?auto=format&fit=crop&w=800&q=80" alt="Tampilan layout presentasi kreatif dengan tema pink" />
+                    <div>
+                        <h3>Konten Digital</h3>
+                        <p>Menyusun konten visual untuk media sosial dan presentasi menggunakan komposisi warna pink yang menarik perhatian.</p>
+                        <a href="#contact">Pelajari lebih lanjut</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section" aria-labelledby="testimonials-heading">
+            <div class="section-heading">
+                <h2 id="testimonials-heading">Testimoni</h2>
+            </div>
+            <p class="section-description">Feedback dari klien yang puas dengan kualitas kerja dan sentuhan personal dalam setiap proyek.</p>
+            <div class="testimonial-list">
+                <article class="testimonial">
+                    <p>"Desainnya sangat cantik dan tepat sasaran. Prosesnya cepat, ramah, dan hasilnya melebihi ekspektasi."</p>
+                    <strong>– Ratna, Pemilik Toko Online</strong>
+                </article>
+                <article class="testimonial">
+                    <p>"Komunikasinya jelas dan profesional. Saya puas dengan tampilan baru yang feminim dan elegan."</p>
+                    <strong>– Maya, Event Planner</strong>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="section-heading">
+                <h2 id="contact-heading">Kontak</h2>
+            </div>
+            <p class="section-description">Butuh bantuan desain atau ingin memulai proyek baru? Silakan hubungi saya melalui formulir di bawah atau langsung menggunakan detail kontak.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Informasi Kontak</h3>
+                    <dl>
+                        <dt>Email</dt>
+                        <dd><a href="mailto:halo@pinkportfolio.com">halo@pinkportfolio.com</a></dd>
+                        <dt>Telepon</dt>
+                        <dd><a href="tel:+628123456789">+62 812-3456-789</a></dd>
+                        <dt>Lokasi</dt>
+                        <dd>Jakarta, Indonesia</dd>
+                    </dl>
+                </div>
+                <form id="contact-form" class="contact-card" action="#" method="post" aria-label="Formulir kontak">
+                    <h3>Kirim Pesan</h3>
+                    <div id="form-message" class="form-message" aria-live="polite" style="display:none"></div>
+                    <div class="form-field">
+                        <label for="name">Nama</label>
+                        <input id="name" name="name" type="text" required placeholder="Nama lengkap" />
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" required placeholder="email@domain.com" />
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" required placeholder="Tuliskan pesan Anda..." aria-describedby="message-help"></textarea>
+                        <span id="message-help" style="font-size:0.9rem; color:var(--muted);">Kami akan membalas secepat mungkin.</span>
+                    </div>
+                    <button type="submit" class="form-submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>Hak Cipta © 2026 My Pink Portfolio. Desain hangat dan profesional untuk ide kreatif Anda.</p>
+        </footer>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
